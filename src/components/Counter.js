@@ -8,9 +8,8 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   // specify a function to retrieve the state
-  const counter = useSelector(state => state.counter);
-
-  const showCounter = useSelector(state => state.showCounter);
+  const counter = useSelector(state => state.counter.counter);
+  const showCounter = useSelector(state => state.counter.showCounter);
 
 
   const incrementHandler = () => {
